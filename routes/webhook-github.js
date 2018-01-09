@@ -1,5 +1,7 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
+const bot = require('../bot.js');
+
 
 /* POST . */
 router.post('/', function(_req, res, _next) {

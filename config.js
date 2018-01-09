@@ -1,13 +1,13 @@
 const config = {};
 
-config.github = proccess.env.github || '',
-config.user = proccess.env.targetUser || 'ryanlabouve',
-config.repo = proccess.env.targetRepos || '["diffed-bot"]',
-config.botUser = proccess.env.botUser || 'ryanlabouvebot',
-config.botPassword = proccess.env.botPassword || '',
+config.github = process.env.github || '',
+config.user = process.env.targetUser || 'ryanlabouve',
+config.repo = process.env.targetRepos || '["diffed-bot"]',
+config.botUser = process.env.botUser || 'ryanlabouvebot',
+config.botPassword = process.env.botPassword || '',
 
-config.pullRequestsStatus = proccess.env.pullRequestsStatus || 'open';
-config.oauth2token = proccess.env.oauth2token || '';
-config.filenameFilters = proccess.env.filenameFilters || '["public/dummy.txt"]';
+config.pullRequestsStatus = process.env.pullRequestsStatus || 'open';
+config.oauth2token = process.env.oauth2token || '';
+config.filenameFilters = process.env.filenameFilters || '["public/dummy.txt"]';
 
 module.exports = config;

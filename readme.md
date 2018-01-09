@@ -3,6 +3,7 @@
 ## Development
 
 DEBUG=diffed-bot:* npm start
+heroku logs --tail
 
 ## Install
 

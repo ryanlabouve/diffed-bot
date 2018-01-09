@@ -1,6 +1,6 @@
 var GitHubApi = require('github'),
   debug = require('debug')('reviewbot:bot'),
-  config = require('../config');
+  config = require('./config');
 
 var options = {version: '3.0.0'}
 if (config.github) {
@@ -29,4 +29,17 @@ function _authenticate() {
       password: config.botPassword
     });
   }
+}
+
+function getFilesChanged() {
+  const params = {
+    // owner:
+    // repo
+    // number // pull request number
+  }
+  // return github.pullRequests.getFiles({ ... })
+}
+
+module.exports = {
+  
 }
